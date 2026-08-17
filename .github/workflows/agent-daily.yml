@@ -13,16 +13,28 @@ jobs:
     timeout-minutes: 30
 
     steps:
-      - name: Checkout repo
+      - name: Checkout code
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Install Python 3.11
         uses: actions/setup-python@v5
         with:
           python-version: "3.11"
 
+      - name: Debug - List files
+        run: |
+          pwd
+          ls -la
+          ls -la requirements.txt 2>/dev/null || echo "requirements.txt NOT FOUND"
+
       - name: Install dependencies
-        run: python -m pip install -r requirements.txt
+        run: |
+          echo "Working directory: $(pwd)"
+          echo "Files in directory:"
+          ls -la requirements.txt || echo "File not found!"
+          python -m pip install -r requirements.txt
 
       - name: Run agent
         id: run_agent
