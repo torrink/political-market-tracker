@@ -1,0 +1,50 @@
+name: Political Tracker Agent (Daily)
+
+on:
+  schedule:
+    # 9 AM EST = 14:00 UTC (GitHub Actions cron always runs in UTC).
+    # Note: during EDT (Mar-Nov) this fires at 10 AM local time.
+    - cron: "0 14 * * *"
+  workflow_dispatch: {}
+
+jobs:
+  run-agent:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Install Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run agent
+        id: run_agent
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_KEY: ${{ secrets.SUPABASE_KEY }}
+          CONGRESS_API_KEY: ${{ secrets.CONGRESS_API_KEY }}
+        run: python -m agent.main
+
+      - name: Log success
+        if: success()
+        run: echo "Agent run succeeded at $(date -u)"
+
+      - name: Log failure
+        if: failure()
+        run: echo "Agent run FAILED at $(date -u)"
+
+      # Optional: send a notification on failure. Requires a SLACK_WEBHOOK_URL
+      # secret to be set; uncomment to enable.
+      # - name: Notify on failure
+      #   if: failure()
+      #   run: |
+      #     curl -X POST -H 'Content-type: application/json' \
+      #       --data "{\"text\":\"political-tracker agent run failed: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}\"}" \
+      #       "${{ secrets.SLACK_WEBHOOK_URL }}"
