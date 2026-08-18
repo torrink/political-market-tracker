@@ -1,0 +1,51 @@
+ticker,company_name,aliases,cik,uei,sector,benchmark_etf,market_cap_musd,notes
+LMT,Lockheed Martin Corporation,Lockheed Martin Corporation|Lockheed Martin Aeronautics|Lockheed Martin Missiles and Fire Control|Lockheed Martin Space|Sikorsky Aircraft,0000936468,,defense,ITA,110000,"Prime; F-35 program lead, largest single DoD contractor by obligations"
+GD,General Dynamics Corporation,General Dynamics Corporation|General Dynamics Land Systems|General Dynamics Electric Boat|General Dynamics Mission Systems|General Dynamics Bath Iron Works|Gulfstream Aerospace,0000040533,,defense,ITA,75000,"Prime; Columbia-class submarines (Electric Boat), Abrams tanks, DDG-51 destroyers (Bath Iron Works)"
+HII,"Huntington Ingalls Industries, Inc.",Huntington Ingalls Industries|Newport News Shipbuilding|Ingalls Shipbuilding|HII Mission Technologies,0001501585,,defense,ITA,10000,"Mid-cap prime; sole builder of Navy nuclear aircraft carriers, dominant surface combatant/sub shipbuilder"
+KTOS,"Kratos Defense & Security Solutions, Inc.",Kratos Defense & Security Solutions|Kratos Unmanned Aerial Systems|Kratos Space,0001069258,,defense,ITA,5000,Army/Air Force target drone and hypersonics test-vehicle contracts
+MRCY,"Mercury Systems, Inc.",Mercury Systems|Mercury Defense Systems,0001049521,,defense,ITA,3000,DoD radar/EW subsystem supplier across multiple prime programs
+AVAV,"AeroVironment, Inc.",AeroVironment|BlueHalo,0001368622,,defense,ITA,7000,Switchblade loitering munitions; Ukraine security-assistance package contracts
+LDOS,"Leidos Holdings, Inc.","Leidos Holdings|Leidos, Inc.",0001336920,,defense,ITA,22000,Large IT/intel services contractor across DoD and intelligence community
+CACI,CACI International Inc,"CACI International Inc|CACI, Inc.-Federal|CACI Federal",0000016058,,defense,ITA,11000,DoD/intelligence-community signals-intelligence and IT services
+PSN,Parsons Corporation,Parsons Corporation|Parsons Government Services,0000275880,,defense,ITA,9000,"DoD/State Dept critical infrastructure, cyber, and missile defense services"
+CW,Curtiss-Wright Corporation,Curtiss-Wright Corporation|Curtiss-Wright Flow Control,0000026324,,defense,ITA,14000,Naval nuclear propulsion valves/pumps - sole-source content on submarine supply chain
+TXT,Textron Inc.,Textron Inc|Bell Textron|Textron Aviation|Textron Systems,0000217346,,defense,ITA,16000,"Bell helicopters (Army/Marine Corps), Textron Systems unmanned/munitions programs"
+MOG.A,Moog Inc.,Moog Inc|Moog Aircraft Group,0000067887,,defense,ITA,8000,Flight control/missile actuation systems supplier across many DoD prime programs
+ATRO,Astronics Corporation,Astronics Corporation|Astronics DME|Astronics Advanced Electronic Systems,0000008063,,defense,ITA,1800,Avionics/lighting supplier on military aircraft cockpit upgrade programs
+DRS,"Leonardo DRS, Inc.",Leonardo DRS|DRS Technologies,0001833756,,defense,ITA,9000,"Army combat vehicle sensors/electronics, Columbia-class submarine electronics"
+ESLT,Elbit Systems Ltd.,Elbit Systems Ltd|Elbit Systems of America|Elbit Systems Land and C4I,0001027664,,defense,ITA,16000,Israeli MoD-linked prime; growing US DoD subsidiary (Elbit Systems of America) contract base
+SMR,NuScale Power Corporation,NuScale Power Corporation|NuScale Power LLC,0001822966,,nuclear_smr,URA,6000,DOE cost-share funding for SMR design certification (~$1.3B since 2014); Romania RoPower deployment
+OKLO,Oklo Inc.,Oklo Inc,0001849056,,nuclear_smr,URA,10000,DOE Idaho National Laboratory site use permit; USAF Eielson AFB microreactor agreement
+BWXT,"BWX Technologies, Inc.",BWX Technologies|Babcock & Wilcox|BWXT Nuclear Operations Group|BWXT Government Group,0001486957,,nuclear_smr,URA,12000,Sole-source manufacturer of Naval Nuclear Propulsion Program reactor components/fuel
+LEU,Centrus Energy Corp.,Centrus Energy Corp|American Centrifuge Operating LLC|United States Enrichment Corporation,0001065059,,nuclear_smr,URA,4000,"DOE HALEU enrichment demonstration contract, Piketon, Ohio"
+CCJ,Cameco Corporation,Cameco Corporation|Cameco Inc|Cameco Resources,0001009001,,nuclear_smr,URA,24000,Largest Western uranium producer; co-owner of Westinghouse (with Brookfield) since 2023
+UEC,Uranium Energy Corp,Uranium Energy Corp,0001334933,,nuclear_smr,URA,3000,DOE Uranium Reserve program supplier; restarted US ISR production
+URG,Ur-Energy Inc.,Ur-Energy Inc|Ur-Energy USA Inc|Lost Creek ISR LLC,0001375205,,nuclear_smr,URA,500,"DOE Uranium Reserve program supplier (Lost Creek ISR, Wyoming)"
+DNN,Denison Mines Corp.,Denison Mines Corp|Denison Mines (USA) Corp,0001063259,,nuclear_smr,URA,2000,Wheeler River project (Saskatchewan); potential future US-bound supply
+CEG,Constellation Energy Corporation,Constellation Energy Corporation|Constellation Energy Generation LLC|Exelon Generation Company,0001868275,,nuclear_smr,URA,85000,Crane Clean Energy Center (Three Mile Island Unit 1) restart under Microsoft PPA; DOE loan program interest
+LTBR,Lightbridge Corporation,Lightbridge Corporation,0001084554,,nuclear_smr,URA,150,DOE Advanced Reactor Demonstration Program-adjacent accident-tolerant fuel R&D
+MP,MP Materials Corp.,MP Materials Corp|MP Mine Operations LLC,0001801368,,critical_minerals,XME,7000,DoD Title III (Defense Production Act) funding for Fort Worth magnet facility; DoD price-floor offtake agreement
+USAR,"USA Rare Earth, Inc.",USA Rare Earth Inc|USA Rare Earth LLC,0001970622,,critical_minerals,XME,1500,Oklahoma rare-earth magnet facility; in discussions with DoD on magnet supply chain funding
+NB,NioCorp Developments Ltd.,NioCorp Developments Ltd|Elk Creek Resources Corporation,0001512228,,critical_minerals,XME,400,EXIM Bank letter of interest for Elk Creek (Nebraska) niobium/REE/scandium project financing
+UUUU,Energy Fuels Inc.,Energy Fuels Inc|Energy Fuels Resources (USA) Inc|White Mesa Mill,0001385849,,critical_minerals,XME,2000,"DoD/DOE rare-earth separation contracts at White Mesa Mill, Utah; also uranium producer"
+ALB,Albemarle Corporation,Albemarle Corporation,0000915913,,critical_minerals,XME,12000,DOE Bipartisan Infrastructure Law battery-materials processing grant funding
+PLL,Piedmont Lithium Inc.,Piedmont Lithium Inc|Piedmont Lithium Carolinas Inc,0001728205,,critical_minerals,XME,300,DOE Loan Programs Office conditional-commitment interest for Carolina/Tennessee Lithium projects
+SLI,Standard Lithium Ltd.,Standard Lithium Ltd|Standard Lithium (USA) Corp,0001537137,,critical_minerals,XME,700,Arkansas Smackover brine lithium project; DOE/state demonstration-grant interest
+PPTA,Perpetua Resources Corp.,Perpetua Resources Corp|Midas Gold Idaho Inc|Stibnite Gold Project,0001526243,,critical_minerals,XME,1800,"DoD Title III (Defense Production Act) funding + EXIM Bank loan for Stibnite antimony/gold project, Idaho"
+TMQ,Trilogy Metals Inc.,Trilogy Metals Inc|Ambler Metals LLC,0001543418,,critical_minerals,XME,350,Ambler Road federal right-of-way (Bureau of Land Management) is the key permitting catalyst
+FCX,Freeport-McMoRan Inc.,Freeport-McMoRan Inc|Freeport-McMoRan Copper & Gold,0000831259,,critical_minerals,XME,55000,Largest US-domiciled copper producer; copper is on the DOE/USGS critical minerals-adjacent list
+METC,"Ramaco Resources, Inc.",Ramaco Resources Inc|Ramaco Carbon|Brook Mine,0001687187,,critical_minerals,XME,1200,Brook Mine (Wyoming) rare-earth-from-coal-byproduct project drawing DOE/state interest
+CRML,Critical Metals Corp.,Critical Metals Corp|Tanbreez Mining Greenland A/S,0001951089,,critical_minerals,XME,250,"Greenland rare-earth project; geopolitically sensitive given US-Greenland interest, no confirmed direct US award"
+ENTG,"Entegris, Inc.",Entegris Inc|Entegris Materials Solutions|CMC Materials,0001101302,,semiconductors,SMH,13000,Indirect CHIPS Act beneficiary (fab-capex-driven materials demand); no direct federal award confirmed
+MKSI,MKS Inc.,MKS Inc|MKS Instruments Inc|Newport Corporation,0001049502,,semiconductors,SMH,9000,Indirect CHIPS Act beneficiary (fab-capex-driven equipment demand); no direct federal award confirmed
+ACLS,"Axcelis Technologies, Inc.",Axcelis Technologies Inc,0001113232,,semiconductors,SMH,2800,"Ion-implant equipment maker; indirect CHIPS Act beneficiary, no direct federal award confirmed"
+AEIS,"Advanced Energy Industries, Inc.",Advanced Energy Industries Inc,0000927003,,semiconductors,SMH,5000,"Power-delivery subsystems for fab tools; indirect CHIPS Act beneficiary, no direct federal award confirmed"
+UCTT,"Ultra Clean Holdings, Inc.",Ultra Clean Holdings Inc|Ultra Clean Technology Systems,0001275014,,semiconductors,SMH,1400,"Fab-tool subsystem contract manufacturer; indirect CHIPS Act beneficiary, no direct federal award confirmed"
+ICHR,"Ichor Holdings, Ltd.",Ichor Holdings Ltd|Ichor Systems Inc,0001652535,,semiconductors,SMH,900,"Fluid-delivery subsystems for fab tools; indirect CHIPS Act beneficiary, no direct federal award confirmed"
+ONTO,Onto Innovation Inc.,Onto Innovation Inc|Nanometrics Incorporated|Rudolph Technologies,0000704532,,semiconductors,SMH,8500,"Process control/inspection equipment; indirect CHIPS Act beneficiary, no direct federal award confirmed"
+COHU,"Cohu, Inc.",Cohu Inc,0000021535,,semiconductors,SMH,800,"Semiconductor test-handling equipment; indirect CHIPS Act beneficiary, no direct federal award confirmed"
+APA,APA Corporation,APA Corporation|Apache Corporation,0001841666,,energy,XLE,9000,Gulf of Mexico federal-lease operator; no major direct federal funding relationship known
+RRC,Range Resources Corporation,Range Resources Corporation,0000315852,,energy,XLE,9500,Appalachian (Marcellus) gas producer; LNG-export feedstock demand relevance
+AR,Antero Resources Corporation,Antero Resources Corporation,0001433270,,energy,XLE,11000,Appalachian gas producer; federal/state pipeline permitting relevance
+OVV,Ovintiv Inc.,Ovintiv Inc|Ovintiv USA Inc|Newfield Exploration Company,0001792580,,energy,XLE,11500,Multi-basin E&P; no major direct federal funding relationship known
+CTRA,Coterra Energy Inc.,Coterra Energy Inc|Cabot Oil & Gas Corporation|Cimarex Energy Co,0000858470,,energy,XLE,19000,Marcellus/Permian producer; LNG-export feedstock demand relevance
