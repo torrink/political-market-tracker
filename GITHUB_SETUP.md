@@ -2,7 +2,7 @@
 
 This repo runs the agent daily via `.github/workflows/agent-daily.yml`
 (`0 14 * * *` UTC = 9 AM EST / 10 AM EDT), plus manual runs via
-`workflow_dispatch`. Before it can run successfully, three repository
+`workflow_dispatch`. Before it can run successfully, four repository
 secrets must be configured.
 
 **Never commit secret values into this repo.** Add them only through the
@@ -16,13 +16,14 @@ https://github.com/torrink/political-market-tracker/settings/secrets/actions
 
 ## Step 2 — Click "New repository secret"
 
-## Step 3 — Add these 3 secrets (exact names, case-sensitive)
+## Step 3 — Add these 4 secrets (exact names, case-sensitive)
 
 | Secret name        | Value                                                    |
 |---------------------|-----------------------------------------------------------|
 | `SUPABASE_URL`       | Your Supabase project URL (Supabase dashboard → Project Settings → API → Project URL) |
 | `SUPABASE_KEY`       | Your Supabase anon/service key (Supabase dashboard → Project Settings → API → Project API keys) |
 | `CONGRESS_API_KEY`   | Your Congress.gov API key (from your api.congress.gov registration) |
+| `NTFY_TOPIC`         | Your ntfy.sh topic name (pick any hard-to-guess string - anyone who knows it can read your alerts, since ntfy topics aren't private by default) |
 
 Paste each value directly into the "Secret" field in the GitHub UI — do not
 paste them into any file, commit, PR description, or issue.
@@ -42,7 +43,8 @@ paste them into any file, commit, PR description, or issue.
 - **"Run workflow" button not visible**: the workflow file must exist on
   the default branch (`main`) first — push it, then refresh the Actions tab.
 - **Secret not found / empty env var**: secret names are case-sensitive and
-  must match exactly `SUPABASE_URL`, `SUPABASE_KEY`, `CONGRESS_API_KEY`.
+  must match exactly `SUPABASE_URL`, `SUPABASE_KEY`, `CONGRESS_API_KEY`,
+  `NTFY_TOPIC`.
 - **Rotating a leaked key**: if a key was ever pasted into a file, commit,
   chat log, or issue, treat it as compromised — rotate it in Supabase /
   Congress.gov and update the GitHub secret with the new value.

@@ -10,6 +10,7 @@ Requires CONGRESS_API_KEY in the environment for the Congress.gov source
 (see agent/sources/congress.py). If SUPABASE_URL/SUPABASE_KEY are not set,
 the run still fetches and scores everything but skips the DB write with a
 clear message - no Supabase project has been created for this repo yet.
+If NTFY_TOPIC is not set, push alerts are skipped the same way.
 """
 
 import os
@@ -20,6 +21,7 @@ from agent.sources.usaspending import UsaspendingSource
 from agent.sources.congress import CongressSource
 from agent.scorers.correlation import score_signals
 from agent.db.supabase_client import upsert_signals
+from agent.alerts.engine import send_ntfy_alert, ALERT_THRESHOLD
 
 SOURCES = [SecEdgarSource(), FederalRegisterSource(), UsaspendingSource(), CongressSource()]
 
@@ -38,6 +40,14 @@ def main():
     scored = score_signals(all_signals)
     correlated = sum(1 for s in scored if s["score"] > 0)
     print(f"\nScored {len(scored)} signals ({correlated} with correlation > 0)")
+
+    ntfy_topic = os.environ.get("NTFY_TOPIC")
+    if ntfy_topic:
+        alertable = [s for s in scored if s["score"] >= ALERT_THRESHOLD]
+        sent = sum(1 for s in alertable if send_ntfy_alert(s, ntfy_topic))
+        print(f"Sent {sent}/{len(alertable)} ntfy alerts (score >= {ALERT_THRESHOLD}).")
+    else:
+        print("[SKIPPED] NTFY_TOPIC not set - no push alerts sent this run.")
 
     if not os.environ.get("SUPABASE_URL") or not os.environ.get("SUPABASE_KEY"):
         print("[SKIPPED] SUPABASE_URL/SUPABASE_KEY not set - not writing to Supabase this run.")
