@@ -26,8 +26,10 @@ jobs:
       - name: Debug - List files
         run: |
           pwd
+          echo "=== Files in directory ==="
           ls -la
-          ls -la requirements.txt 2>/dev/null || echo "requirements.txt NOT FOUND"
+          echo "=== Check requirements.txt ==="
+          ls -la requirements.txt || echo "File NOT found"
 
       - name: Install dependencies
         run: |
